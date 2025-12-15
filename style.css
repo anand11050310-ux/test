@@ -1,0 +1,140 @@
+/* Global */
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #ffffff, #ececec);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.8;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #7a0000, #c40000);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+/* Flag */
+.flag-left {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 310px;
+    border-radius: 14px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: translateY(-10px) scale(1.06);
+    box-shadow: 0 18px 40px rgba(139,0,0,0.6);
+}
+
+/* Content Cards */
+.content {
+    background: linear-gradient(180deg, #ffffff, #f9f9f9);
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+}
+
+.content h2 {
+    color: #7a0000;
+    font-size: 30px;
+}
+
+.content h3 {
+    color: #b30000;
+    margin-top: 25px;
+}
+
+.content ul {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #7a0000, #b30000);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Credit */
+.credit {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    font-size: 14px;
+    color: #444;
+    opacity: 0.85;
+}
+
+/* Animations */
+.fade-up {
+    animation: fadeUp 1.2s ease both;
+}
+
+.fade-down {
+    animation: fadeDown 1.2s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
